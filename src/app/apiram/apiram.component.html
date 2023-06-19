@@ -1,0 +1,17 @@
+<body>
+  <app-header></app-header>
+  <div class="container">
+  <h1 class="title">Consumo de API Rest</h1>
+  <div class="btns">
+    <button class="btn"  >Anterior</button>
+    <button class="btn">Siguiente</button>
+  </div>
+  <div class="grid">
+    <div *ngFor="let item of data" class="character">
+      <img src="{{ item.image }}"/>
+      <h2>{{ item.name }}</h2>
+      <h3>{{ item.species }}</h3>
+    </div>
+  </div>
+  </div>
+</body>

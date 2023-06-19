@@ -1,0 +1,29 @@
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 5px;
+  font-size: 26px;
+}
+
+footer a:hover #linkedin {
+  text-decoration: none;
+  color: #0e76a8;
+}
+
+footer a:hover #facebook {
+  text-decoration: none;
+  color: #3b5998;
+}
+
+footer a:hover #instagram {
+  text-decoration: none;
+  color: #ff5080;
+}
