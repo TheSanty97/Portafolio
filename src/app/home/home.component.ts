@@ -29,7 +29,56 @@ export class HomeComponent implements OnInit {
         document.getElementById("js").classList.add("barra-progreso2");
         document.getElementById("bd").classList.add("barra-progreso3");
         document.getElementById("c#").classList.add("barra-progreso4");
-    }
-}*/
-
+    }*/
 }
+
+//--------------------------------------------------------------------------//
+//                         TIPOS DE DATOS TYPESCRIPT                       //
+
+//                                NUMBER                                    //
+//
+
+//                                STRING                                    //
+//
+
+//                                BOOLEAN                                    //
+//
+
+//                                OBJECT                                    //
+//
+
+//                                ARRAY                                    //
+//
+
+//                              TUPLE                                    //
+// funcionan como los arrays pero definiendo la cantidad de datos que tendra y su tipo
+
+let file: [string, string] = ["imagen", "imagen.jpg"]
+file = ["video","video.mp4"]
+
+//                                ENUM                                    //
+// sirve para declarar identificadores constantes globales enumerados
+enum colors { red = "#ff0000", blue = "#0000ff", green = "#00ff00" };
+
+const preferences =
+{
+  fontSize: 14,
+  fontFamily: "Times New Roman",
+  color: colors.red
+}
+
+//                                ANY                                    //
+// sirve para declarar cualquier tipo de dato o valor
+const number: any = true;
+
+//                                UNION                                    //
+// sirve para combinar varios tipos de datos en los usos
+const numberString: number | string = "";
+
+//                                LITERAL                                    //
+// sirve para indicar los valores que quiero recibir
+const navegador: "chrome" | "edge" = "chrome";
+
+//                                ALIAS                                    //
+// sirve para crear tipos de datos concretos
+type browser = "chrome" | "edge";
