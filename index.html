@@ -1,12 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./estilos.css">
-  <title>Proyecto BIT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Mi Portafolio</title>
 </head>
+
 <body>
-  
+  <div class="contenido">
+    <header>
+      <section id="encabezado">
+        <div class="contenido_encabezado">
+          <nav id="nav" class="">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-inicio-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-inicio" type="button" role="tab" aria-controls="pills-inicio"
+                  aria-selected="true">Inicio</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-sobremi-tab" data-bs-toggle="pill" data-bs-target="#pills-sobremi"
+                  type="button" role="tab" aria-controls="pills-sobremi" aria-selected="false">Sobre Mi</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-portafolio-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-portafolio" type="button" role="tab" aria-controls="pills-portafolio"
+                  aria-selected="false">Portafolio</button>
+              </li>
+              <li class="nav-item" role="presentation"></li>
+              <button class="nav-link" id="pills-habilidades-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-habilidades" type="button" role="tab" aria-controls="pills-habilidades"
+                aria-selected="false">Habilidades</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contacto-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-contacto" type="button" role="tab" aria-controls="pills-contacto"
+                  aria-selected="false">Contacto</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <main id="ventanas">
+      <div class="tab-content" id="pills-tabContent">
+        <!-- SECCION INICIO -->
+        <div class="tab-pane fade show active" id="pills-inicio" role="tabpanel" aria-labelledby="pills-inicio-tab"
+          tabindex="0">
+          <section id="inicio">
+            <div class="presentacion">
+              <p class="bienvenida">Bienvenidos</p>
+              <h2>
+                Soy <span>Santiago Pérez</span>, Tecnólogo en análisis y desarrollo
+                de sistemas de información y estudiante de Ingeniería de Software.
+              </h2>
+              <p class="descripcion">
+                Cuento con experiencia como analista de soporte, brindando soporte de aplicaciones web y de
+                escritorio,
+                experiencia en desarrollo de aplicaciones de escritorio con C# y Windows Forms,
+                asi como tambien desarrollo de aplicaciones Web con Angular
+                y conocimientos en SQL para gestión de bases de datos.
+              </p>
+            </div>
+          </section>
+        </div>
+        <!-- SECCION SOBRE MI -->
+        <div class="tab-pane fade" id="pills-sobremi" role="tabpanel" aria-labelledby="pills-sobremi-tab" tabindex="0">
+          <section id="sobremi">
+            <div class="contenido_sobremi">
+              <h2>Hola, soy <span>Santiago Perez</span></h2>
+              <h3>Tecnólogo en análisis y desarrollo de sistemas de información</h3>
+              <p>
+                Me apasiona el mundo de la tecnología y la evolución que esta tiene cada día, la cual nos abre un
+                gran abanico
+                de posibilidades para el presente y futuro,
+                soy estudiante de Ingeniería de Software y una persona autodidacta que le gusta estar en constante
+                aprendizaje
+                de nuevas tecnologias y mejores aplicaciones que estas pueden ofrecernos,
+                con ganas de seguir creciendo en el mundo del desarrollo y poder crear las mejores soluciones de
+                software que
+                ayuden a suplir las necesidades del usuario final
+                aplicando las practicas de construccion de software que he ido aprendiendo y mejorando en el
+                transcurso del
+                tiempo.
+              </p>
+              <p>
+                Creé este portafolio con el fin de aplicar mis conocimientos y
+                habilidades e ir actualizandolo con nuevas funcionalidades y mejoras de interfaz,
+                para que quede plasmado en este toda la experiencia que vaya recolectando
+                en el camino.
+              </p>
+              <a href="https://www.linkedin.com/in/TheSanty97/">Ver CV</a>
+            </div>
+          </section>
+        </div>
+        <!-- SECCION PORTAFOLIO -->
+        <div class="tab-pane fade" id="pills-portafolio" role="tabpanel" aria-labelledby="pills-portafolio-tab"
+          tabindex="0">
+          <section id="portafolio">
+            <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+            <div class="fila">
+              <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./images/proyecto1.jpg" alt="" />
+                <div class="info">
+                  <h4>Descripción del Proyecto</h4>
+                  <p>Diseño de Escritorio</p>
+                </div>
+              </div>
+              <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./images/proyecto2.jpg" alt="" />
+                <div class="info">
+                  <h4>Descripción del Proyecto</h4>
+                  <p>Diseño Web</p>
+                </div>
+              </div>
+              <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./images/rick_and_morty.jpeg" alt="" />
+                <div class="info">
+                  <h4>Descripción del Proyecto</h4>
+                  <p>Implementacion de consumo de APIs</p>
+                  <a href="https://thesanty97.github.io/ramsvelte/">Ver Implementación</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- SECCION HABILIDADES -->
+        <div class="tab-pane fade" id="pills-habilidades" role="tabpanel" aria-labelledby="pills-habilidades-tab"
+          tabindex="0">
+          <section id="habilidades">
+            <div class="contenedor-skills">
+              <h3>HABILIDADES</h3>
+              <div class="skill">
+                <div class="info">
+                  <p><span class="lista"></span>HTML & CSS</p>
+                  <span class="porcentaje">60%</span>
+                </div>
+                <div class="barra">
+                  <div id="html" class="barra-progreso1"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="info">
+                  <p><span class="lista"></span>JAVASCRIPT</p>
+                  <span class="porcentaje">60%</span>
+                </div>
+                <div class="barra">
+                  <div id="js" class="barra-progreso2"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="info">
+                  <p><span class="lista"></span>BASES DE DATOS</p>
+                  <span class="porcentaje">70%</span>
+                </div>
+                <div class="barra">
+                  <div id="bd" class="barra-progreso3"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="info">
+                  <p><span class="lista"></span>C#</p>
+                  <span class="porcentaje">60%</span>
+                </div>
+                <div class="barra">
+                  <div id="c#" class="barra-progreso4"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- SECCION CONTACTO -->
+        <div class="tab-pane fade" id="pills-contacto" role="tabpanel" aria-labelledby="pills-contacto-tab"
+          tabindex="0">
+          <section id="contacto">
+            <div id="contenido_contacto">
+              <h3 class="titulo-seccion">Contactame ahora</h3>
+              <div class="contenedor-form">
+                <form action="">
+                  <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" />
+                    <input type="text" placeholder="Correo Electronico" class="input-mitad" />
+                  </div>
+                  <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full" />
+                  </div>
+                  <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                      class="input-full"></textarea>
+                  </div>
+                  <input type="button" value="Enviar Mensaje" class="btn-enviar" />
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- SECCION FOOTER -->
+  <footer>
+    <a href="">Copyright &copy; 2024 - Santiago Pérez</a>
+    <a href="https://www.linkedin.com/in/TheSanty97/"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
+    <a href="https://www.facebook.com/TheSanty97"><i class="fa-brands fa-facebook" id="facebook"></i></a>
+    <a href="https://www.instagram.com/thesanty97/"><i class="fa-brands fa-square-instagram" id="instagram"></i></a>
+  </footer>
+
+  <!-- CDN de BOOTSTRAP 5.3.3 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
