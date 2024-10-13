@@ -382,3 +382,86 @@ footer a:hover #facebook {
 footer a:hover #instagram {
   color: #ff5080;
 }
+
+/*SECCION APP NOTAS*/
+#contenido_notas {
+  padding: 100px 15px;
+}
+
+#contenido_notas .titulo-seccion {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+}
+
+#notas {
+  padding: 20px;
+}
+
+.contenedor-form {
+  margin-bottom: 20px;
+}
+
+#buscarNota {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+#formNota input,
+#formNota textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#listaNotas {
+  margin-top: 20px;
+}
+
+.nota {
+  background-color: #af6eeb;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.nota h4 {
+  margin: 0 0 5px 0;
+}
+
+.nota p {
+  margin: 0 0 10px 0;
+}
+
+.nota .acciones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nota button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nota .editar {
+  background-color: #ffc107;
+}
+
+.nota .editar:hover {
+  background-color: #e0a800;
+}
+
+.nota .eliminar {
+  background-color: #dc3545;
+}
+
+.nota .eliminar:hover {
+  background-color: #c82333;
+}
