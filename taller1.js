@@ -1,15 +1,15 @@
 // 1. Función que determine si un año es bisiesto.
 function esBisiesto(ano) {
   if ((ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0) {
-      return 'El año SI es bisiesto';
+    return 'El año SI es bisiesto';
   } else {
-      return 'El año NO es bisiesto';
+    return 'El año NO es bisiesto';
   }
 }
 
 // 2. Función que convierta grados Celsius a Fahrenheit.
 function celsiusAFahrenheit(celsius) {
-  return (celsius * 9/5) + 32 + ' °F';
+  return (celsius * 9 / 5) + 32 + ' °F';
 }
 
 // 3. Función que devuelva el mayor de dos números.

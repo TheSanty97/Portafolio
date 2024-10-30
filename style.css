@@ -25,6 +25,47 @@ body {
   /* El contenido se expandirá para llenar el espacio entre el header y el footer */
 }
 
+section {
+  padding-top: 10rem;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+p {
+  margin: 15px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
 /* SECCION ENCABEZADO */
 .contenido_encabezado {
   background-color: rgba(0, 0, 0, .8);
@@ -38,106 +79,25 @@ body {
 /* SECCION INICIO */
 #inicio .presentacion {
   max-width: 1100px;
-  height: 70vh;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
-#inicio .presentacion .bienvenida {
-  font-size: 20px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #fff;
-}
-
-#inicio .presentacion h2 {
-  font-size: 55px;
-  margin-bottom: 25px;
-  text-align: center;
-  color: #fff;
-}
-
-#inicio .presentacion h2 span {
-  font-size: 35px;
+#inicio .presentacion p span {
+  font-size: 30px;
   color: #ff5080;
 }
 
-#inicio .presentacion .descripcion {
-  max-width: 700px;
-  margin: 25px auto;
-  font-size: 18px;
-  text-align: center;
-  color: #fff;
-}
-
 /*SECCION SOBRE MI*/
-#sobremi {
-  max-width: 1100px;
-  margin: auto;
-  padding: 100px 15px;
-  color: white;
-  display: flex;
-}
-
-#sobremi .contenido_sobremi {
-  margin: 0 40 px;
-}
-
-#sobremi .contenido_sobremi h2 {
-  font-size: 34px;
-  font-weight: bold;
-  margin: 20px 0;
-  letter-spacing: 2px;
-}
-
 #sobremi .contenido_sobremi h2 span {
   color: #ff5080;
 }
 
-#sobremi .contenido_sobremi h3 {
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-}
-
-#sobremi .contenido_sobremi p {
-  font-size: 14px;
-  line-height: 25px;
-  color: white;
-  margin-bottom: 15px;
-}
-
-#sobremi .contenido_sobremi a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  border-radius: 30px;
-  padding: 10px;
-  border: 1px solid white;
-  margin-top: 30px;
-  transition: .5s;
-}
-
-#sobremi .contenido_sobremi a:hover {
-  background-color: #ff5080;
-  color: #fff;
-}
-
 /*SECCION HABILIDADES*/
-#habilidades {
-  padding-top: 10rem;
-}
-
-.contenedor-skills h3 {
-  color: white;
-  font-size: 30px;
-  text-align: center;
+.contenedor-skills {
+  margin: 15px;
 }
 
 .contenedor-skills .skill {
@@ -237,31 +197,16 @@ body {
 }
 
 /*SECCION PORTAFOLIO*/
-#portafolio {
-  padding: 100px 0;
-  margin: auto;
-}
-
-#portafolio .titulo-seccion {
-  text-align: center;
-  font-size: 22px;
-  text-transform: uppercase;
-  color: white;
-  margin-bottom: 80px;
-}
-
 #portafolio .fila {
-  display: flex;
-  justify-content: space-evenly;
+  display: ruby;
   margin: 30px 0;
 }
 
 #portafolio .fila .proyecto {
   max-width: 550px;
   border: 1px solid #000;
-  margin: 0 10px;
+  margin: 10px;
   position: relative;
-  overflow: hidden;
 }
 
 #portafolio .fila .proyecto img {
@@ -295,15 +240,7 @@ body {
 
 /*SECCION CONTACTO*/
 #contenido_contacto {
-  padding: 100px 15px;
-}
-
-#contenido_contacto .titulo-seccion {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 22px;
-  text-transform: uppercase;
-  color: white;
+  margin: 15px;
 }
 
 #contenido_contacto .contenedor-form {
@@ -355,9 +292,7 @@ body {
 footer {
   background: transparent;
   text-align: center;
-  font-size: 5px;
-  padding: 10px;
-  font-size: 16px;
+  padding: 3px;
   background-color: #222;
   color: #fff;
   width: 100%;
@@ -367,8 +302,8 @@ footer a {
   text-decoration: none;
   color: #fff;
   display: inline-block;
-  margin: 5px;
-  font-size: 26px;
+  margin: 3px;
+  font-size: 17px;
 }
 
 footer a:hover #linkedin {
@@ -385,33 +320,30 @@ footer a:hover #instagram {
 
 /*SECCION APP NOTAS*/
 #contenido_notas {
-  padding: 100px 15px;
+  padding: 15px;
 }
 
-#contenido_notas .titulo-seccion {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 22px;
-  text-transform: uppercase;
-  color: white;
-}
-
-#notas {
-  padding: 20px;
-}
-
-.contenedor-form {
-  margin-bottom: 20px;
+#notas .contenedor-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 #buscarNota {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px;
 }
 
-#formNota input,
+#formNota input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 #formNota textarea {
+  height: 10rem;
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -420,13 +352,17 @@ footer a:hover #instagram {
 }
 
 #listaNotas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 15px;
   margin-top: 20px;
 }
 
 .nota {
+  min-width: 20rem;
   background-color: #af6eeb;
   padding: 10px;
-  margin-bottom: 10px;
+  margin: 5px;
   border-radius: 4px;
 }
 
@@ -435,7 +371,12 @@ footer a:hover #instagram {
 }
 
 .nota p {
+  min-height: 10rem;
   margin: 0 0 10px 0;
+  font-size: 0.9em;
+  text-align: justify;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .nota .acciones {

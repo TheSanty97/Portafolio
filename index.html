@@ -15,42 +15,39 @@
 
 <body>
   <div class="contenido">
-    <header>
-      <section id="encabezado">
-        <div class="contenido_encabezado">
-          <nav id="nav" class="">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-inicio-tab" data-bs-toggle="pill"
-                  data-bs-target="#pills-inicio" type="button" role="tab" aria-controls="pills-inicio"
-                  aria-selected="true">Inicio</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-sobremi-tab" data-bs-toggle="pill" data-bs-target="#pills-sobremi"
-                  type="button" role="tab" aria-controls="pills-sobremi" aria-selected="false">Sobre Mi</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-portafolio-tab" data-bs-toggle="pill"
-                  data-bs-target="#pills-portafolio" type="button" role="tab" aria-controls="pills-portafolio"
-                  aria-selected="false">Portafolio</button>
-              </li>
-              <li class="nav-item" role="presentation"></li>
-              <button class="nav-link" id="pills-habilidades-tab" data-bs-toggle="pill"
-                data-bs-target="#pills-habilidades" type="button" role="tab" aria-controls="pills-habilidades"
-                aria-selected="false">Habilidades</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contacto-tab" data-bs-toggle="pill" data-bs-target="#pills-contacto"
-                  type="button" role="tab" aria-controls="pills-contacto" aria-selected="false">Contacto</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-notas-tab" data-bs-toggle="pill" data-bs-target="#pills-notas"
-                  type="button" role="tab" aria-controls="pills-notas" aria-selected="false">Taller 2 APP NOTAS</button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </section>
+    <header id="encabezado">
+      <div class="contenido_encabezado">
+        <nav id="nav" class="">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-inicio-tab" data-bs-toggle="pill" data-bs-target="#pills-inicio"
+                type="button" role="tab" aria-controls="pills-inicio" aria-selected="true">Inicio</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-sobremi-tab" data-bs-toggle="pill" data-bs-target="#pills-sobremi"
+                type="button" role="tab" aria-controls="pills-sobremi" aria-selected="false">Sobre Mi</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-portafolio-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-portafolio" type="button" role="tab" aria-controls="pills-portafolio"
+                aria-selected="false">Portafolio</button>
+            </li>
+            <li class="nav-item" role="presentation"></li>
+            <button class="nav-link" id="pills-habilidades-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-habilidades" type="button" role="tab" aria-controls="pills-habilidades"
+              aria-selected="false">Habilidades</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contacto-tab" data-bs-toggle="pill" data-bs-target="#pills-contacto"
+                type="button" role="tab" aria-controls="pills-contacto" aria-selected="false">Contacto</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-notas-tab" data-bs-toggle="pill" data-bs-target="#pills-notas"
+                type="button" role="tab" aria-controls="pills-notas" aria-selected="false">APP NOTAS</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main id="ventanas">
       <div class="tab-content" id="pills-tabContent">
@@ -59,12 +56,12 @@
           tabindex="0">
           <section id="inicio">
             <div class="presentacion">
-              <p class="bienvenida">Bienvenidos</p>
-              <h2>
+              <h1 class="bienvenida">Bienvenidos</h1>
+              <p class="m-4">
                 Soy <span>Santiago Pérez</span>, Tecnólogo en análisis y desarrollo
                 de sistemas de información y estudiante de Ingeniería de Software.
-              </h2>
-              <p class="descripcion">
+              </p>
+              <p class="descripcion m-4">
                 Cuento con experiencia como analista de soporte, brindando soporte de aplicaciones web y de
                 escritorio,
                 experiencia en desarrollo de aplicaciones de escritorio con C# y Windows Forms,
@@ -77,7 +74,7 @@
         <!-- SECCION SOBRE MI -->
         <div class="tab-pane fade" id="pills-sobremi" role="tabpanel" aria-labelledby="pills-sobremi-tab" tabindex="0">
           <section id="sobremi">
-            <div class="contenido_sobremi">
+            <div class="contenido_sobremi mt-4">
               <h2>Hola, soy <span>Santiago Perez</span></h2>
               <h3>Tecnólogo en análisis y desarrollo de sistemas de información</h3>
               <p>
@@ -100,15 +97,14 @@
                 para que quede plasmado en este toda la experiencia que vaya recolectando
                 en el camino.
               </p>
-              <a href="https://www.linkedin.com/in/TheSanty97/">Ver CV</a>
             </div>
           </section>
         </div>
         <!-- SECCION PORTAFOLIO -->
         <div class="tab-pane fade" id="pills-portafolio" role="tabpanel" aria-labelledby="pills-portafolio-tab"
           tabindex="0">
-          <section id="portafolio">
-            <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+          <section id="portafolio" class="mt4">
+            <h2 class="titulo-seccion">MIS PROYECTOS</h2>
             <div class="fila">
               <div class="proyecto">
                 <div class="overlay"></div>
@@ -143,7 +139,7 @@
           tabindex="0">
           <section id="habilidades">
             <div class="contenedor-skills">
-              <h3>HABILIDADES</h3>
+              <h2>HABILIDADES</h2>
               <div class="skill">
                 <div class="info">
                   <p><span class="lista"></span>HTML & CSS</p>
@@ -188,7 +184,7 @@
           tabindex="0">
           <section id="contacto">
             <div id="contenido_contacto">
-              <h3 class="titulo-seccion">Contactame ahora</h3>
+              <h2 class="titulo-seccion">Contactame ahora</h2>
               <div class="contenedor-form">
                 <form action="">
                   <div class="fila mitad">
@@ -212,9 +208,8 @@
         <div class="tab-pane fade" id="pills-notas" role="tabpanel" aria-labelledby="pills-notas-tab" tabindex="0">
           <section id="notas">
             <div id="contenido_notas">
-              <h3 class="titulo-seccion">APP NOTAS</h3>
+              <h2 class="titulo-seccion">APP NOTAS</h2>
               <div class="contenedor-form">
-                <input type="text" id="buscarNota" placeholder="Buscar nota..." />
                 <form id="formNota">
                   <input type="text" id="tituloNota" placeholder="Título de la nota" required />
                   <textarea id="contenidoNota" placeholder="Escribe tu nota aquí..." required></textarea>
@@ -224,6 +219,7 @@
                   </div>
                 </form>
               </div>
+              <input type="text" id="buscarNota" placeholder="Buscar nota..." />
               <div id="listaNotas"></div>
             </div>
           </section>
@@ -243,7 +239,7 @@
   <script src="./taller1.js"></script>
 
   <!-- Taller 2 app de notas -->
-  <script src="./taller2.js"></script>
+  <script src="./notas.js"></script>
 
   <!-- JavaScript de la aplicación -->
   <script src="./script.js"></script>
